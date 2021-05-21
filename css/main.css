@@ -330,10 +330,12 @@ ul {
 .project {
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
+    text-align: center;
     /* Shadow */
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
     box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 5px 5px 20px rgb(0, 0, 0); Alternative shadow*/
 }
 
 .project-preview {
