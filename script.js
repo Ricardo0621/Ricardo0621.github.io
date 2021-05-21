@@ -1,38 +1,21 @@
-console.log('Yup, it works')
-
-let theme = localStorage.getItem('holi')
-
+let theme = localStorage.getItem('theme') //This variable can have any name. It can be theme, hi or anything
+console.log('default', theme)
+let themeDots = document.getElementsByClassName('theme-dot')
 if (theme == null) {
-    setTheme('main')
+    setTheme('main') //Sets main mode first time the website is accessed
 } else {
     setTheme(theme)
 }
-let themeDots = document.getElementsByClassName('theme-dot')
 
 for (var i = 0; themeDots.length > i; i++) {
-    themeDots[i].addEventListener('click', function() {
+    themeDots[i].addEventListener('click', function() { //Adds an event for each mode clicked
         let mode = this.dataset.mode
-        console.log('CLico', mode)
-        setTheme(mode)
+        console.log('Curent mode: ', mode)
+        setTheme(mode) //Sets the current mode
     })
 }
 
 function setTheme(mode) {
-    if (mode == 'main') {
-        document.getElementById('theme-style').href = 'css/main.css'
-    }
-
-    if (mode == 'dark') {
-        document.getElementById('theme-style').href = 'css/dark.css'
-    }
-
-    if (mode == 'green') {
-        document.getElementById('theme-style').href = 'css/green.css'
-    }
-
-    if (mode == 'purple') {
-        document.getElementById('theme-style').href = 'css/purple.css'
-    }
-
-    localStorage.setItem('holi', mode)
+    document.getElementById('theme-style').href = 'css/' + mode + '.css' //Sets the theme-style varibale defined at the beginning of the HTML file with whatever option is selected
+    localStorage.setItem('theme', mode) //Sets the localStoarge var with the current mode
 }
