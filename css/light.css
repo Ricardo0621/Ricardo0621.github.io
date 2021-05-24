@@ -55,7 +55,8 @@ h6,
 strong {
     /**Using the defined variable for primary text color*/
     color: var(--mainTextColor);
-    font-family: 'Rancho', cursive;
+    /* font-family: 'Rancho', cursive; */
+    font-family: 'Play', sans-serif;
     font-weight: 500;
     /*Might change this later*/
 }
@@ -194,7 +195,7 @@ ul {
     border-width: 5px;
 }
 
-#main-mode {
+#light-mode {
     background-color: #ffffff;
 }
 
