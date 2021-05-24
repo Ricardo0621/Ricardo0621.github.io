@@ -5,6 +5,8 @@
     --borderColor: #c1c1c1;
     --mainWebpageColor: #eaeaea;
     --secondWebpageColor: #ffffff;
+    --mainPreviewDotsColor: #c1c1c1;
+    --mainPreviewLinesColor: #c1c1c1;
     --themeDotBorder: #24292e;
     --previewBackground: #fbf9f3cc;
     --previewShadow: #f0ead6;
@@ -256,7 +258,7 @@ ul {
 
 #preview {
     width: 300px;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid var(--mainPreviewLinesColor);
     background-color: var(--previewBackground);
     padding: 15px;
     position: relative;
@@ -266,7 +268,8 @@ ul {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid var(--mainPreviewDotsColor);
+    /* Inner circle color */
     background-color: #ffffff;
     position: absolute;
 }
