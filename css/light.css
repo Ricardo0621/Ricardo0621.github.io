@@ -260,7 +260,7 @@ ul {
     width: 300px;
     border: 1.5px solid var(--mainPreviewLinesColor);
     background-color: var(--previewBackground);
-    padding: 15px;
+    padding: 8px;
     position: relative;
 }
 
@@ -417,10 +417,28 @@ ul {
     border: none;
 }
 
+.hamburguer-button {
+    display: none;
+}
+
 
 /* Responsive */
 
 @media screen and (max-width: 800px) {
+    .hamburguer-button {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: var(--mainTextColor);
+        font-size: 20px;
+    }
+    /* The ul element serves its purpose as it allows to hide the whole list (nav-bar elements) */
+    ul {
+        display: none;
+    }
+    ul.show {
+        display: block;
+    }
     #navigation {
         margin: 0;
         padding: 0px;
@@ -428,14 +446,8 @@ ul {
     #navigation li {
         display: inline-block;
         margin-left: 0px;
-        margin-right: 0px;
         font-size: 14px;
-        justify-content: space-around;
-    }
-    .nav-wrapper {
-        display: flex;
         justify-content: space-evenly;
-        align-items: center;
     }
     .browser-dot {
         margin: 4px;

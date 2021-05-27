@@ -9,10 +9,11 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rancho&family=Play&display=swap" rel="stylesheet">
-
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
     <!--Main style-->
     <link rel="stylesheet" type="text/css" href="css/light.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
@@ -42,6 +43,10 @@
                         <li><a href="#Research">Research</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
+                    <button class="hamburguer-button" id="hamburger">
+                        <!--Font Awesome class-->
+                        <i class="fas fa-bars"></i> 
+                    </button>
                 </div>
 
                 <div class="left-column">
@@ -54,7 +59,7 @@
                         <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
-                    <p id="config-notes">* Your preference will be saved</p>
+                    <p id="config-notes">*Your theme will be saved</p>
                 </div>
 
                 <div class="right-column">
@@ -249,8 +254,9 @@
             </form>
         </div>
     </section>
-    <script type="text/javascript" src="script.js"></script>
 
+    <script type="text/javascript" src="themeSelector.js"></script>
+    <script type="text/javascript" src="hamburgerMenu.js"></script>
 
 </body>
 
