@@ -447,8 +447,11 @@ ul {
         display: inline-block;
         margin-left: 0px;
         /* margin-right: 0px; :))*/
-        font-size: 14px;
+        font-size: 12px;
         justify-content: space-evenly;
+    }
+    #skills ul {
+        display: inline-block;
     }
     .browser-dot {
         margin: 4px;
