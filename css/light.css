@@ -429,8 +429,8 @@ ul {
         display: inline-block;
         margin-left: 0px;
         margin-right: 0px;
-        font-size: 13px;
-        justify-content: space-evenly;
+        font-size: 14px;
+        justify-content: space-around;
     }
     .nav-wrapper {
         display: flex;
