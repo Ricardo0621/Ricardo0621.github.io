@@ -299,8 +299,15 @@ ul {
     text-align: center;
     align-content: center;
     grid-template-columns: 1fr;
-    grid-template-areas: 'about-section' 'social-links';
+    grid-template-areas: 'about-section' 'social-links' 'about-animation';
     /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); Alternative to media query*/
+}
+
+.about-animation {
+    grid-area: about-animation;
+    display: grid;
+    align-content: center;
+    text-align: center;
 }
 
 .about-section {
@@ -413,13 +420,26 @@ ul {
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
-    .main-container {
-        width: 95%;
-    }
-}
-
 @media screen and (max-width: 800px) {
+    #navigation {
+        margin: 0;
+        padding: 0px;
+    }
+    #navigation li {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 13px;
+        justify-content: space-evenly;
+    }
+    .nav-wrapper {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .browser-dot {
+        margin: 4px;
+    }
     .intro-wrapper {
         /* Display mode while responsive: First nav bar then profile pic and color modes and then about me section */
         grid-template-columns: 1fr;
@@ -428,5 +448,11 @@ ul {
     /* Already specified before that it's a grid */
     .right-column {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 95%;
     }
 }
