@@ -310,6 +310,11 @@ ul {
     text-align: center;
 }
 
+#lottie-animation {
+    width: 50%;
+    height: 50%;
+}
+
 .about-section {
     grid-area: about-section;
     display: grid;
