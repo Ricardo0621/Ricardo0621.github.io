@@ -173,6 +173,7 @@ ul {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 50%;
     border: 2px solid var(--borderColor);
 }
 
@@ -197,7 +198,7 @@ ul {
     border-width: 5px;
 }
 
-#light-mode {
+#main-mode {
     background-color: #ffffff;
 }
 
@@ -254,14 +255,20 @@ ul {
     height: 180px;
     padding-left: 30px;
     padding-top: 30px;
+    border-radius: 2%;
 }
 
 #preview {
     width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
     border: 1.5px solid var(--mainPreviewLinesColor);
     background-color: var(--previewBackground);
     padding: 8px;
     position: relative;
+    text-align: center;
+    border-radius: 2%;
 }
 
 .corner {
@@ -298,41 +305,91 @@ ul {
     display: grid;
     text-align: center;
     align-content: center;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'about-section' 'social-links' 'about-animation';
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'about-section about-animation';
     /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); Alternative to media query*/
-}
-
-.about-animation {
-    grid-area: about-animation;
-    display: grid;
-    align-content: center;
-    text-align: center;
-}
-
-#lottie-animation {
-    width: 50%;
-    height: 50%;
 }
 
 .about-section {
     grid-area: about-section;
     display: grid;
+    align-content: center;
+    text-align: justify;
+    padding-bottom: 20px;
 }
 
-#skills {
+.about-section h4 {
+    text-align: center;
+}
+
+.about-animation {
+    grid-area: about-animation;
+    display: grid;
+    align-content: initial;
+    text-align: start;
+}
+
+#lottie-animation {
+    margin: 0 auto;
+    /* padding: 15px; */
+    width: 70%;
+    height: 70%;
+}
+
+.skills-wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'skills-animation skills';
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); Alternative to media query*/
+}
+
+.skills {
+    grid-area: skills;
+    display: grid;
+    /* grid-column-gap: 50px;
+    grid-row-gap: 50px; */
+    /* justify-content: space-evenly; */
+    /* background-color: var(--previewShadow); */
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.skills ul {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--previewShadow);
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
-.social-links {
-    grid-area: social-links;
+.iconify {
+    width: 50px;
+    height: 50px;
+}
+
+.skills-animation {
+    grid-area: skills-animation;
     display: grid;
-    /* Without this bottom padding there's no space at the bottom since I used a-tags for the social media links */
-    padding-bottom: 40px;
+    align-content: initial;
+    text-align: center;
+}
+
+#lottie-animation-skills {
+    margin: 0 auto;
+    /* padding: 15px; */
+    width: 70%;
+    height: 70%;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0px
+}
+
+.social-icons {
+    fill: var(--mainTextColor);
+    height: 24px;
+    width: 24px;
 }
 
 .projects-wrapper {
@@ -453,10 +510,11 @@ ul {
         margin-left: 0px;
         /* margin-right: 0px; :))*/
         font-size: 12px;
-        justify-content: space-evenly;
     }
-    #skills ul {
-        display: inline-block;
+    .skills ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-inline-start: 0px;
     }
     .browser-dot {
         margin: 4px;
@@ -469,6 +527,16 @@ ul {
     /* Already specified before that it's a grid */
     .right-column {
         justify-content: center;
+    }
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'about-section' 'about-animation';
+        /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); Alternative to media query*/
+    }
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'skills' 'skills-animation';
+        /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); Alternative to media query*/
     }
 }
 
