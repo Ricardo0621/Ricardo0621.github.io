@@ -536,6 +536,11 @@ ul {
         width: 90%;
         height: 90%;
     }
+    #lottie-animation-skills {
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
