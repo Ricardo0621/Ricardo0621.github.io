@@ -141,7 +141,7 @@ ul {
     color: var(--mainTextColor);
 }
 
-#navigation .closeBtn {
+#navigation .close-button {
     display: none;
 }
 
@@ -474,17 +474,12 @@ ul {
         width: 100%;
         overflow-x: hidden;
     }
-    /* The ul element serves its purpose as it allows to hide the whole list (nav-bar elements) */
     #navigation {
-        /* Height & width depends on how you want to reveal the overlay (see JS below) */
         display: none;
         height: 100%;
-        width: 0;
-        /* Sit on top */
         z-index: 1;
         left: 0;
         top: 0;
-        /* Black w/opacity */
         background-color: rgba(0, 0, 0, 0.9);
     }
     #navigation li {
@@ -501,7 +496,7 @@ ul {
         display: block;
         transition: 0.3s;
     }
-    #navigation .closeBtn {
+    #navigation .close-button {
         display: block;
     }
     .skills ul {
