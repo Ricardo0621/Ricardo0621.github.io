@@ -9,7 +9,6 @@
     --mainPreviewLinesColor: #c1c1c1;
     --themeDotBorder: #24292e;
     --previewBackground: #fbf9f3cc;
-    --previewShadow: #f0ead6;
     --buttonColor: #000000;
 }
 
@@ -249,16 +248,7 @@ ul {
     padding-bottom: 50px;
 }
 
-#preview-shadow {
-    background-color: var(--previewShadow);
-    width: 300px;
-    height: 180px;
-    padding-left: 30px;
-    padding-top: 30px;
-    border-radius: 2%;
-}
-
-#preview {
+#about-intro {
     width: 300px;
     height: 180px;
     padding-left: 30px;
@@ -269,36 +259,6 @@ ul {
     position: relative;
     text-align: center;
     border-radius: 2%;
-}
-
-.corner {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    border: 1.5px solid var(--mainPreviewDotsColor);
-    /* Inner circle color */
-    background-color: #ffffff;
-    position: absolute;
-}
-
-#top-left-corner {
-    top: -5px;
-    left: -5px;
-}
-
-#top-right-corner {
-    top: -5px;
-    right: -5px;
-}
-
-#bottom-left-corner {
-    bottom: -5px;
-    left: -5px;
-}
-
-#bottom-right-corner {
-    bottom: -5px;
-    right: -5px;
 }
 
 .about-wrapper {
@@ -326,14 +286,16 @@ ul {
     grid-area: about-animation;
     display: grid;
     align-content: initial;
-    text-align: start;
 }
 
 #lottie-animation {
     margin: 0 auto;
-    /* padding: 15px; */
+    margin-top: 75px;
+    padding: 15px;
     width: 70%;
     height: 70%;
+    display: grid;
+    align-content: center;
 }
 
 .skills-wrapper {
@@ -348,17 +310,22 @@ ul {
 .skills {
     grid-area: skills;
     display: grid;
-    /* grid-column-gap: 50px;
-    grid-row-gap: 50px; */
-    /* justify-content: space-evenly; */
-    /* background-color: var(--previewShadow); */
-    /* padding-top: 50px;
-    padding-bottom: 50px; */
 }
 
 .skills ul {
     display: flex;
     justify-content: space-evenly;
+    /* padding: 0px;
+    margin: 0px; */
+    /* padding-inline-start: 0px;
+    padding: 0px; */
+    /* margin: 0px; 
+    width: 50px;
+    height: 50px; */
+}
+
+.skills li {
+    font-size: 0px;
 }
 
 .iconify {
@@ -375,9 +342,10 @@ ul {
 
 #lottie-animation-skills {
     margin: 0 auto;
-    /* padding: 15px; */
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    align-content: center;
 }
 
 .social-links ul {
@@ -494,22 +462,62 @@ ul {
         color: var(--mainTextColor);
         font-size: 20px;
     }
-    /* The ul element serves its purpose as it allows to hide the whole list (nav-bar elements) */
-    ul {
-        display: none;
-    }
-    ul.show {
+    #navigation.show {
         display: block;
+        position: fixed;
+        /* top: 20px; */
+        right: 45px;
+        font-size: 60px;
+        width: 100%;
+        overflow-x: hidden;
     }
+    /* The ul element serves its purpose as it allows to hide the whole list (nav-bar elements) */
     #navigation {
-        margin: 0;
-        padding: 0px;
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        display: none;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        /* Black fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     }
     #navigation li {
-        display: inline-block;
-        margin-left: 0px;
-        /* margin-right: 0px; :))*/
-        font-size: 12px;
+        position: relative;
+        top: 25%;
+        /* 25% from the top */
+        width: 100%;
+        /* 100% width */
+        text-align: center;
+        /* Centered text/links */
+        margin-top: 30px;
+        /* 30px top margin to avoid conflict with the close button on smaller screens */
+        /* margin-right: 0px; :))
+        font-size: 12px;*/
+    }
+    #navigation a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        /* Display block instead of inline */
+        transition: 0.3s;
+        /* Transition effects on hover (color) */
+    }
+    #navigation a:hover,
+    #navigation a:focus {
+        color: #f1f1f1;
     }
     .skills ul {
         display: flex;
@@ -537,6 +545,11 @@ ul {
         grid-template-columns: 1fr;
         grid-template-areas: 'skills' 'skills-animation';
         /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); Alternative to media query*/
+    }
+    #lottie-animation {
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
     }
 }
 
