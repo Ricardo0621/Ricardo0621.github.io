@@ -10,6 +10,7 @@
     --themeDotBorder: #24292e;
     --previewBackground: #fbf9f3cc;
     --buttonColor: #000000;
+    --menuBackgroundColor: #ebebebe6;
 }
 
 html,
@@ -480,7 +481,7 @@ ul {
         z-index: 1;
         left: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: var(--menuBackgroundColor)
     }
     #navigation li {
         position: relative;
@@ -492,7 +493,7 @@ ul {
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
-        color: #818181;
+        color: var(--mainTextColor);
         display: block;
         transition: 0.3s;
     }
