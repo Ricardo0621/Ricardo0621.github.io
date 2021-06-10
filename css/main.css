@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body * {
     transition: 0.3s;
 }
@@ -74,6 +78,9 @@ textarea {
     font-family: 'Inter', sans-serif;
 }
 
+
+/* Sections */
+
 .section1 {
     background-color: var(--mainWebpageColor);
     /* border-bottom: 1px solid var(--borderColor); */
@@ -90,11 +97,14 @@ textarea {
     overflow: auto;
 }
 
-.triangle {
+
+/* Separators */
+
+.triangle-separator {
     position: relative;
 }
 
-.triangle::before {
+.triangle-separator::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -107,11 +117,11 @@ textarea {
     transform: translateX(-50%) translateY(100%);
 }
 
-.spikes {
+.spikes-separator {
     position: relative;
 }
 
-.spikes::after {
+.spikes-separator::after {
     content: '';
     position: absolute;
     right: 0;
@@ -125,12 +135,12 @@ textarea {
     background-position: 0 0;
 }
 
-.container {
+.wave-container {
     position: relative;
     height: 50px;
 }
 
-.wave {
+.wave-separator {
     position: absolute;
     height: 50px;
     width: 100%;
@@ -138,15 +148,15 @@ textarea {
     bottom: 0;
 }
 
-.wave::before,
-.wave::after {
+.wave-separator::before,
+.wave-separator::after {
     content: "";
     display: block;
     position: absolute;
     border-radius: 100% 50%;
 }
 
-.wave::before {
+.wave-separator::before {
     width: 55%;
     height: 109%;
     background-color: var(--secondWebpageColor);
@@ -154,7 +164,7 @@ textarea {
     top: 60%;
 }
 
-.wave::after {
+.wave-separator::after {
     width: 55%;
     height: 100%;
     background-color: var(--mainWebpageColor);
@@ -162,7 +172,7 @@ textarea {
     top: 40%;
 }
 
-.wave-reversed {
+.wave-reversed-separator {
     position: absolute;
     height: 50px;
     width: 100%;
@@ -170,15 +180,15 @@ textarea {
     bottom: 0;
 }
 
-.wave-reversed::before,
-.wave-reversed::after {
+.wave-reversed-separator::before,
+.wave-reversed-separator::after {
     content: "";
     display: block;
     position: absolute;
     border-radius: 50% 100%;
 }
 
-.wave-reversed::before {
+.wave-reversed-separator::before {
     width: 55%;
     height: 100%;
     background-color: var(--secondWebpageColor);
@@ -186,7 +196,7 @@ textarea {
     top: 40%;
 }
 
-.wave-reversed::after {
+.wave-reversed-separator::after {
     width: 55%;
     height: 109%;
     background-color: var(--mainWebpageColor);
@@ -515,12 +525,19 @@ ul {
     justify-content: space-evenly;
 }
 
+
+/* .project-individual-div {
+    background-color: #ffffff;
+} */
+
 .thumbnail {
     display: block;
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 5px 5px 0 0;
+    /* border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%; */
 }
 
 #contact-form {
