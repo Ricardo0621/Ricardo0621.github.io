@@ -160,7 +160,7 @@ textarea {
     width: 55%;
     height: 109%;
     background-color: var(--secondWebpageColor);
-    right: -1.5%;
+    right: 0%;
     top: 60%;
 }
 
@@ -192,7 +192,7 @@ textarea {
     width: 55%;
     height: 100%;
     background-color: var(--secondWebpageColor);
-    right: -1.5%;
+    right: 0%;
     top: 40%;
 }
 
