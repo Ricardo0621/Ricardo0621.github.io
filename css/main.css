@@ -630,7 +630,6 @@ ul {
         font-size: 36px;
         color: var(--mainTextColor);
         display: block;
-        transition: 0.3s;
     }
     #navigation .close-button {
         display: block;
