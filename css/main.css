@@ -97,13 +97,57 @@ textarea {
     overflow: hidden;
 }
 
-.section2 .about-section {
+.section2 .about-wrapper {
     opacity: 0;
     transform: translate(0, 10vh);
     transition: all 1s;
 }
 
-.section2 .about-section.visible {
+.section2 .about-wrapper.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.section1 .skills-wrapper {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.section1 .skills-wrapper.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.section2 .projects-wrapper {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.section2 .projects-wrapper.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.section1 .projects-wrapper {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.section1 .projects-wrapper.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.section2 #contact-form {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.section2 #contact-form.visible {
     opacity: 1;
     transform: translate(0, 0);
 }
@@ -159,8 +203,12 @@ textarea {
     height: 150px;
 }
 
-.waves-separator .shape-fill {
+.waves-separator .shape-fill-main {
     fill: var(--mainWebpageColor);
+}
+
+.waves-separator .shape-fill-secondary {
+    fill: var(--secondWebpageColor);
 }
 
 .main-container {
