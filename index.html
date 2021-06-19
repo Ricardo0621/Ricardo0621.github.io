@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Ricardo Diaz Rincon | Full-stack developer
+        Ricardo Diaz Rincon | Full-stack Developer
     </title>
     <!--Responsive-->
     <meta charset="UTF-8">
@@ -17,11 +17,18 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rancho&family=Play&display=swap" rel="stylesheet">
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
     <!--Main style-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    <link rel="preload" href="scripts/themeSelector.js" as="script">
+    <link rel="preload" href="scripts/hamburgerMenu.js" as="script">
+    <link rel="preload" href="scripts/fadeInEffect.js" as="script">
+    <link rel="preload" href="scripts/animationScript.js" as="script">
+    <link rel="preload" href="scripts/animationScriptSkills.js" as="script">
+
     <!--Iconify-->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!--Lottie-->
@@ -54,8 +61,7 @@
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
                     <button class="hamburguer-button" id="hamburger">
-                        <!--Font Awesome class-->
-                        <i class="fas fa-bars"></i>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                     </button>
                 </div>
 
@@ -447,11 +453,11 @@
         </div>
     </section>
 
-    <script type="text/javascript " src="scripts/themeSelector.js "></script>
-    <script type="text/javascript " src="scripts/hamburgerMenu.js "></script>
-    <script type="text/javascript " src="scripts/fadeInEffect.js "></script>
-    <script src="scripts/animationScript.js "></script>
-    <script src="scripts/animationScriptSkills.js "></script>
+    <script src="scripts/themeSelector.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/fadeInEffect.js"></script>
+    <script src="scripts/animationScript.js"></script>
+    <script src="scripts/animationScriptSkills.js"></script>
 
 </body>
 

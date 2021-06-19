@@ -531,6 +531,9 @@ ul {
 
 .hamburguer-button {
     display: none;
+    fill: var(--mainTextColor);
+    width: 25px;
+    height: 25px;
 }
 
 
