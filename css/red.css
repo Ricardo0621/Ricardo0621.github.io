@@ -1,13 +1,12 @@
 :root {
     --mainTextColor: #ffffff;
     --secondTextColor: #e6e6e6;
-    --borderColor: #37c464;
+    --borderColor: #e89ea3;
     --mainWebpageColor: #eb7678;
     --secondWebpageColor: #a73738;
-    --mainPreviewDotsColor: #17b84a;
-    --mainPreviewLinesColor: #17b84a;
+    --mainPreviewLinesColor: #cd2727;
     --themeDotBorder: #ffffff;
-    --previewBackground: #2a2f25;
-    --buttonColor: #17b84a;
-    --menuBackgroundColor: #2e7e47e6;
+    --previewBackground: #b34545;
+    --buttonColor: #d81b1b;
+    --menuBackgroundColor: #7e2e2ee6;
 }
