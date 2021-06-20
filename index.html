@@ -7,28 +7,27 @@
     </title>
     <!--Responsive-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1" />
+    <meta name="description" content="A fulls-stack developer with a huge passion for BCI, NLP and CN research" />
+    <!--Old logo-<link rel="icon" type="image/jpg" href="https://i.pinimg.com/originals/89/8e/ec/898eec009589bbe985bda7d3c3b47d7a.png">-->
     <!--Logo-->
-    <!-- <link rel="icon" type="image/jpg" href="https://i.pinimg.com/originals/89/8e/ec/898eec009589bbe985bda7d3c3b47d7a.png"> Old logo-->
     <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16x16.png">
     <link rel="manifest" href="images/logo/site.webmanifest">
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Rancho&family=Play&display=swap" rel="stylesheet">
-    <!--Main style-->
-    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <!--Preloads-->
     <link rel="preload" href="css/main.css" as="style">
-    <link rel="stylesheet" href="css/main.css">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="">
-
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Play&display=swap" as="font" crossorigin="anonymous">
     <link rel="preload" href="scripts/themeSelector.js" as="script">
     <link rel="preload" href="scripts/hamburgerMenu.js" as="script">
     <link rel="preload" href="scripts/fadeInEffect.js" as="script">
     <link rel="preload" href="scripts/animationScript.js" as="script">
     <link rel="preload" href="scripts/animationScriptSkills.js" as="script">
-
+    <!--Main style-->
+    <link rel="stylesheet" href="css/main.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Play&display=swap" rel="stylesheet">
     <!--Iconify-->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!--Lottie-->
@@ -80,14 +79,14 @@
                     <div id="about-intro">
                         <h3>About me</h3>
                         <p>I'm a Full-stack developer with a huge passion for
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface">BCI</a>,
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a> and
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Computational_neuroscience">CN</a> research.
+                            <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface">BCI</a>,
+                            <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a> and
+                            <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Computational_neuroscience">CN</a> research.
                         </p>
                         <div class="social-links">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="https://co.linkedin.com/in/ricardodiazrincon">
+                                    <a aria-label="Linkedin profile" target="_blank" rel="noreferrer" href="https://co.linkedin.com/in/ricardodiazrincon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" viewBox="0 0 24 24">
                                             <path
                                                 d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
@@ -95,7 +94,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.github.com/Ricardo0621">
+                                    <a aria-label="Github profile" target="_blank" rel="noreferrer" href="https://www.github.com/Ricardo0621">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" viewBox="0 0 24 24">
                                             <path
                                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -103,7 +102,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.twitter.com/Ricardo_0621">
+                                    <a aria-label="Twitter profile" target="_blank" rel="noreferrer" href="https://www.twitter.com/Ricardo_0621">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" viewBox="0 0 24 24">
                                             <path
                                                 d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
@@ -111,7 +110,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://scholar.google.com/citations?user=O0J-Id8AAAAJ&hl=es">
+                                    <a aria-label="Google Scholar profile" target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=O0J-Id8AAAAJ&hl=es">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" viewBox="0 0 50 50">
                                             <path
                                                 d="M 25 3 C 12.85 3 3 12.85 3 25 C 3 37.15 12.85 47 25 47 C 37.15 47 47 37.15 47 25 C 47 12.85 37.15 3 25 3 z M 21 11 L 38 11 L 36.980469 11.880859 C 36.980469 11.920859 37 11.96 37 12 L 37 17.279297 C 37.6 17.619297 38 18.26 38 19 L 38 25 C 38 26.1 37.1 27 36 27 C 34.9 27 34 26.1 34 25 L 34 19 C 34 18.26 34.4 17.619297 35 17.279297 L 35 13.570312 L 31.410156 16.650391 C 31.760156 17.350391 32 18.200234 32 19.240234 C 32 21.960234 30.480703 23.309766 28.970703 24.509766 C 28.500703 24.989766 27.949219 25.510312 27.949219 26.320312 C 27.949219 27.120313 28.500391 27.570625 28.900391 27.890625 L 30.189453 28.919922 C 31.779453 30.279922 33.220703 31.530547 33.220703 34.060547 C 33.220703 37.510547 29.930469 41 23.730469 41 C 18.500469 41 15.980469 38.47 15.980469 35.75 C 15.980469 34.43 16.629766 32.559531 18.759766 31.269531 C 20.989766 29.879531 24.020391 29.690078 25.650391 29.580078 C 25.140391 28.920078 24.560547 28.230078 24.560547 27.080078 C 24.560547 26.470078 24.749687 26.100391 24.929688 25.650391 C 24.529688 25.690391 24.129531 25.730469 23.769531 25.730469 C 19.969531 25.730469 17.799297 22.85 17.779297 20 L 11 20 L 21 11 z M 24.269531 14.240234 C 23.339531 14.240234 22.33 14.710938 21.75 15.460938 C 21.14 16.220938 20.949219 17.210156 20.949219 18.160156 C 20.949219 20.620156 22.370938 24.699219 25.460938 24.699219 C 26.370938 24.699219 27.339922 24.259922 27.919922 23.669922 C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 14.240234 24.269531 14.240234 z M 26.039062 30.609375 C 25.719062 30.609375 23.769766 30.679219 22.259766 31.199219 C 21.459766 31.499219 19.160156 32.370469 19.160156 34.980469 C 19.160156 37.590469 21.64 39.460938 25.5 39.460938 C 28.97 39.460938 30.800781 37.760234 30.800781 35.490234 C 30.800781 33.620234 29.620859 32.630391 26.880859 30.650391 C 26.590859 30.610391 26.409063 30.609375 26.039062 30.609375 z" />
@@ -119,7 +118,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.researchgate.net/profile/Ricardo-Diaz-Rincon">
+                                    <a aria-label="Research Gate profile" target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Ricardo-Diaz-Rincon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" viewBox="0 0 448 512">
                                             <path
                                                 d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z">
@@ -127,7 +126,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://orcid.org/0000-0002-4262-2735">
+                                    <a aria-label="OrcidId profile" target="_blank" rel="noreferrer" href="https://orcid.org/0000-0002-4262-2735">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" viewBox="0 0 512 512">
                                             <path
                                                 d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57zM300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369z" />
@@ -135,7 +134,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="CV English.pdf">
+                                    <a aria-label="Curriculum Vitae" target="_blank" rel="noreferrer" href="CV English.pdf">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="social-icons" fill-rule="evenodd" clip-rule="evenodd">
                                             <path
                                                 d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-3 17h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z" />
@@ -296,7 +295,7 @@
                             <h6 class="project-title ">Agua Conference Website</h6>
                             <p class="project-intro "> As a Full-stack developer at CINARA, I designed and developed the website of the 2018 edition of the Agua conference.</p>
                             <div class="project-links ">
-                                <a target="_blank " href="https://www.eventoaguacinara.com/">Link</a>
+                                <a target="_blank" rel="noreferrer" href="https://www.eventoaguacinara.com/">Link</a>
                             </div>
                         </div>
                     </div>
@@ -309,8 +308,8 @@
                             <h6 class="project-title ">Scientific Colombia Program</h6>
                             <p class="project-intro ">Developing economical experiments in Django to characterize the behavior of informal social-economic agents in Colombia.</p>
                             <div class="project-links ">
-                                <a target="_blank " href="https://otreebaseapp.herokuapp.com/demo/">Link</a>
-                                <a target="_blank " href="https://github.com/Ricardo0621/EsocialS">Code</a>
+                                <a target="_blank" rel="noreferrer" href="https://otreebaseapp.herokuapp.com/demo/">Link</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Ricardo0621/EsocialS">Code</a>
                             </div>
                         </div>
                     </div>
@@ -323,8 +322,8 @@
                             <h6 class="project-title ">Crash course in Otree (Django)</h6>
                             <p class="project-intro "> I developed a crash course for researchers that covers the implementation of a prisoner's dilemma game in Django.</p>
                             <div class="project-links ">
-                                <a target="_blank " href="https://otree-workshop-esocials.herokuapp.com/">Link</a>
-                                <a target="_blank " href="https://github.com/Ricardo0621/otree-workshop">Code</a>
+                                <a target="_blank" rel="noreferrer" href="https://otree-workshop-esocials.herokuapp.com/">Link</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Ricardo0621/otree-workshop">Code</a>
                             </div>
                         </div>
                     </div>
@@ -357,7 +356,7 @@
                             <p class="project-intro "> Training and developing deep learning algorithms to quantify agressive behaviour in Drosohpila fly.
                             </p>
                             <div class="project-links ">
-                                <a target="_blank " href="https://github.com/Ricardo0621/Drosophila">Code</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Ricardo0621/Drosophila">Code</a>
                             </div>
                         </div>
                     </div>
@@ -371,7 +370,7 @@
                             <p class="project-intro "> Using Hidden Markov Models to find 2 states that distinguish running from no-running behaviour in spontaneous activity of V1 cortex in mouse.
                             </p>
                             <div class="project-links ">
-                                <a target="_blank " href="https://github.com/Ricardo0621/NMA-Project">Code</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Ricardo0621/NMA-Project">Code</a>
                             </div>
                         </div>
                     </div>
@@ -384,9 +383,8 @@
                             <h6 class="project-title ">BrainBeats</h6>
                             <p class="project-intro "> For my BSc Thesis I developed a generative algorithm that creates music from neural data.</p>
                             <div class="project-links ">
-                                <a target="_blank " href="https://github.com/Ricardo0621/BrainBeats">Code</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/Ricardo0621/BrainBeats">Code</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -436,18 +434,21 @@
             <a name="Contact"></a>
             <h3 style="text-align: center; ">Get in Touch!</h3>
             <form id="contact-form">
-                <label>Name</label>
-                <input class="input-field" type="text" name="name">
+                <label>Name
+                    <input class="input-field" type="text" name="name">
+                </label>
 
-                <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
+                <label>Subject
+                    <input class="input-field" type="text" name="subject">
+                </label>
 
-                <label>Email</label>
-                <input class="input-field" type="text " name="email">
+                <label>Email
+                    <input class="input-field" type="text " name="email">
+                </label>
 
-                <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
-
+                <label>Message
+                    <textarea class="input-field" name="message"></textarea>
+                </label>
                 <input id="submit-button" type="submit" value="Send">
             </form>
         </div>
