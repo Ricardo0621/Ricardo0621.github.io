@@ -80,7 +80,7 @@ textarea {
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
+    font-style: sans-serif;
     font-weight: 500;
     font-display: auto;
     src: url('../fonts/inter-v3-latin-500.eot');
