@@ -23,9 +23,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body * {
-    transition: 0.3s;
-}
+
+/* body * {
+    transition: 0.3s;  I grew ired of this transition
+} */
 
 h1 {
     font-size: 56px;
