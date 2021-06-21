@@ -17,11 +17,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16x16.png">
     <link rel="manifest" href="images/logo/site.webmanifest">
-    <!--Preconnect just for Google Fonts. Important to add crossorigin-->
+    <!--Preconnect. Important to add crossorigin ALWAYS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
     <!--Preloads-->
     <link rel="preload" href="css/main.css" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Play&display=swap" as="style">
+    <!--Prefetching JSON animations-->
+    <link rel="preload" href="animations/animation.json" type="application/json" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="animations/animation-skills.json" type="application/json" as="fetch" crossorigin="anonymous">
+    <!--Scripts-->
     <link rel="preload" href="scripts/themeSelector.js" as="script">
     <link rel="preload" href="scripts/hamburgerMenu.js" as="script">
     <link rel="preload" href="scripts/fadeInEffect.js" as="script">
