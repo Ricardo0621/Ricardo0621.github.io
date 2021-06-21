@@ -76,6 +76,24 @@ textarea {
 }
 
 
+/* inter-500 - latin */
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+    src: url('../fonts/inter-v3-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/inter-v3-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/inter-v3-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/inter-v3-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/inter-v3-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/inter-v3-latin-500.svg#Inter') format('svg');
+    /* Legacy iOS */
+}
+
+
 /* Sections */
 
 .section1 {
@@ -331,6 +349,11 @@ ul {
     position: relative;
     text-align: center;
     border-radius: 2%;
+}
+
+#about-intro .h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .about-wrapper {
