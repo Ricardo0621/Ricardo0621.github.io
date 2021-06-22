@@ -108,7 +108,8 @@ textarea {
     overflow: hidden;
 }
 
-.section2 .about-wrapper,
+
+/* .section2 .about-wrapper,
 .section1 .skills-wrapper,
 .section2 .projects-wrapper,
 .section1 .projects-wrapper,
@@ -125,7 +126,7 @@ textarea {
 .section2 #contact-form.visible {
     opacity: 1;
     transform: translate(0, 0);
-}
+} */
 
 
 /* Separators */
