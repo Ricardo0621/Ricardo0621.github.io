@@ -1,6 +1,10 @@
 {
-    "name": "Ricardo Andres Diaz Rincon",
-    "short_name": "Ricardo Diaz Rincon",
+    "start_url": "https://ricardo0621.github.io/",
+    "name": "Ricardo Andres Diaz Rincon | Full-stack developer",
+    "short_name": "Ricardo Diaz Rincon | Full-stack developer",
+    "theme_color": "-mainWebpageColor",
+    "background_color": "--secondWebpageColor",
+    "display": "standalone",
     "icons": [{
             "src": "android-chrome-192x192.png",
             "sizes": "192x192",
@@ -11,8 +15,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#eaeaea",
-    "background_color": "#eaeaea",
-    "display": "standalone"
+    ]
 }
