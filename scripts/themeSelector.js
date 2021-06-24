@@ -2,7 +2,7 @@ let theme = localStorage.getItem('theme') //This variable can have any name. It 
     // console.log('default', theme)
 let themeDots = document.getElementsByClassName('theme-dot')
 if (theme == null) {
-    setTheme('main') //Sets dark mode first time the website is accessed
+    setTheme('dark') //Sets dark mode first time the website is accessed
 } else {
     setTheme(theme)
 }

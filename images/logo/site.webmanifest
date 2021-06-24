@@ -2,8 +2,8 @@
     "start_url": "https://ricardo0621.github.io/",
     "name": "Ricardo Andres Diaz Rincon | Full-stack developer",
     "short_name": "Ricardo Diaz Rincon | Full-stack developer",
-    "theme_color": "-mainWebpageColor",
-    "background_color": "--secondWebpageColor",
+    "theme_color": "#1B2936",
+    "background_color": "#15202B",
     "display": "standalone",
     "icons": [{
             "src": "android-chrome-192x192.png",
