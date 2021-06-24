@@ -38,7 +38,6 @@
     <!--Iconify-->
     <script defer src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!--Lottie-->
-    <script defer src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -182,7 +181,10 @@
                 </div>
 
                 <div class="about-animation">
-                    <div id="lottie-animation"></div>
+                    <div id="lottie-animation">
+                        <script defer src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
+                        <script defer src="scripts/animationScript.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,7 +276,10 @@
                 </div>
 
                 <div class="skills-animation">
-                    <div id="lottie-animation-skills"></div>
+                    <div id="lottie-animation-skills">
+                        <script defer src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
+                        <script defer src="scripts/animationScriptSkills.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -464,8 +469,7 @@
     <script defer src="scripts/themeSelector.js"></script>
     <script defer src="scripts/hamburgerMenu.js"></script>
     <script defer src="scripts/fadeInEffect.js"></script>
-    <script defer src="scripts/animationScript.js"></script>
-    <script defer src="scripts/animationScriptSkills.js"></script>
+
     <!-- Service worker -->
     <script>
         if ("serviceWorker" in navigator) {
