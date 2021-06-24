@@ -255,8 +255,8 @@ ul {
     height: auto; */
     display: block;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 216px;
+    height: 208px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--borderColor);
