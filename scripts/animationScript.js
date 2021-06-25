@@ -1,4 +1,4 @@
-const lottieAnimation = document.getElementById('lottie-animation"')
+const lottieAnimation = document.getElementById('lottie-animation')
 
 var animation = bodymovin.loadAnimation({
     container: lottieAnimation,
