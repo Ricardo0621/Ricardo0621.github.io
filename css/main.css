@@ -553,6 +553,11 @@ ul {
     height: 25px;
 }
 
+lottie-player {
+    width: auto;
+    height: auto;
+}
+
 
 /* Responsive */
 
