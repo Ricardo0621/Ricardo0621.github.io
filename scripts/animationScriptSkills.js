@@ -1,5 +1,5 @@
 const lottieAnimation = document.getElementById('lottie-animation-skills');
-const number_of_frames = 90;
+const number_of_frames = 154;
 var lottie_animation = bodymovin.loadAnimation({
     container: lottieAnimation,
     renderer: 'svg',
@@ -22,6 +22,6 @@ LottieInteractivity.create({
     actions: [{
         visibility: [0, 1],
         type: 'seek',
-        frames: [47, number_of_frames],
+        frames: [60, number_of_frames],
     }, ],
 });

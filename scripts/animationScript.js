@@ -1,5 +1,5 @@
 const container = document.getElementById('lottie-animation');
-const frameToStop = 154;
+const frameToStop = 90;
 var animation = bodymovin.loadAnimation({
     container: container,
     renderer: 'svg',
@@ -23,6 +23,6 @@ LottieInteractivity.create({
     actions: [{
         visibility: [0, 1],
         type: 'seek',
-        frames: [60, frameToStop],
+        frames: [47, frameToStop],
     }, ],
 });
