@@ -16,6 +16,6 @@ for (var i = 0; themeDots.length > i; i++) {
 }
 
 function setTheme(mode) {
-    document.getElementById('theme-style').href = 'css/' + mode + '.css' //Sets the theme-style varibale defined at the beginning of the HTML file with whatever option is selected
+    document.getElementById('theme-style').href = 'styles/' + mode + '.css' //Sets the theme-style varibale defined at the beginning of the HTML file with whatever option is selected
     localStorage.setItem('theme', mode) //Sets the localStoarge var with the current mode
 }
