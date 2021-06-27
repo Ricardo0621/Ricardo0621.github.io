@@ -8,12 +8,12 @@ var lottie_animation = bodymovin.loadAnimation({
     rendererSettings: {
         progressiveLoad: true,
     },
-    path: 'animations/animation-skills2.json' //Dude typing
-        // path: 'https://assets.codepen.io/4358584/01.json',
-        // path: 'animations/animation-skills.json'
-        // path: 'https://assets1.lottiefiles.com/packages/lf20_jaejabqz.json'
-        // path: 'https://assets10.lottiefiles.com/packages/lf20_lln7m43m.json'
-        // path: 'https://assets10.lottiefiles.com/packages/lf20_xsnsvpbs.json'
+    path: 'animations/animation.json',
+    // path: 'https://assets.codepen.io/4358584/01.json',
+    // path: 'animations/animation-skills.json'
+    // path: 'https://assets1.lottiefiles.com/packages/lf20_jaejabqz.json'
+    // path: 'https://assets10.lottiefiles.com/packages/lf20_lln7m43m.json'
+    // path: 'https://assets10.lottiefiles.com/packages/lf20_xsnsvpbs.json'
 })
 LottieInteractivity.create({
     mode: 'scroll',
