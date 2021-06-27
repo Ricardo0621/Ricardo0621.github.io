@@ -1,5 +1,5 @@
 const lottieAnimation = document.getElementById('lottie-animation-skills');
-const number_of_frames = 130;
+const number_of_frames = 90;
 var lottie_animation = bodymovin.loadAnimation({
     container: lottieAnimation,
     renderer: 'svg',
@@ -8,8 +8,9 @@ var lottie_animation = bodymovin.loadAnimation({
     rendererSettings: {
         progressiveLoad: true,
     },
-    // path: 'https://assets.codepen.io/4358584/01.json',
-    path: 'animations/animation-skills.json'
+    path: 'animations/animation-skills2.json' //Dude typing
+        // path: 'https://assets.codepen.io/4358584/01.json',
+        // path: 'animations/animation-skills.json'
         // path: 'https://assets1.lottiefiles.com/packages/lf20_jaejabqz.json'
         // path: 'https://assets10.lottiefiles.com/packages/lf20_lln7m43m.json'
         // path: 'https://assets10.lottiefiles.com/packages/lf20_xsnsvpbs.json'
@@ -17,9 +18,10 @@ var lottie_animation = bodymovin.loadAnimation({
 LottieInteractivity.create({
     mode: 'scroll',
     player: lottie_animation,
+    container: lottieAnimation,
     actions: [{
         visibility: [0, 1],
         type: 'seek',
-        frames: [0, number_of_frames],
+        frames: [47, number_of_frames],
     }, ],
 });

@@ -19,9 +19,10 @@ var animation = bodymovin.loadAnimation({
 LottieInteractivity.create({
     mode: 'scroll',
     player: animation,
+    container: container,
     actions: [{
         visibility: [0, 1],
         type: 'seek',
-        frames: [0, frameToStop],
+        frames: [60, frameToStop],
     }, ],
 });
