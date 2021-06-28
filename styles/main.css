@@ -383,8 +383,8 @@ ul {
     margin: 0 auto;
     margin-top: 75px;
     padding: 15px;
-    width: 70%;
-    height: 70%;
+    width: auto;
+    height: auto;
     display: grid;
     align-content: center;
 }
@@ -433,8 +433,8 @@ ul {
 
 #lottie-animation-skills {
     margin: 0 auto;
-    width: 80%;
-    height: 80%;
+    width: auto;
+    height: auto;
     display: grid;
     align-content: center;
 }
@@ -553,6 +553,11 @@ ul {
     height: 25px;
 }
 
+footer {
+    display: grid;
+    justify-content: center;
+}
+
 
 /* Responsive */
 
@@ -625,13 +630,13 @@ ul {
     }
     #lottie-animation {
         margin: 0 auto;
-        width: 90%;
-        height: 90%;
+        width: auto;
+        height: auto;
     }
     #lottie-animation-skills {
         margin: 0 auto;
-        width: 90%;
-        height: 90%;
+        width: auto;
+        height: auto;
     }
 }
 

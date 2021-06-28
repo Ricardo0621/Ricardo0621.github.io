@@ -1,5 +1,5 @@
 const lottieAnimation = document.getElementById('lottie-animation-skills');
-const number_of_frames = 154;
+const frames_to_stop = 140;
 var lottie_animation = bodymovin.loadAnimation({
     container: lottieAnimation,
     renderer: 'svg',
@@ -11,7 +11,6 @@ var lottie_animation = bodymovin.loadAnimation({
     path: 'https://assets8.lottiefiles.com/packages/lf20_hmgrv1ix.json'
         // path: 'animations/animation.json',
         // path: 'https://assets.codepen.io/4358584/01.json',
-        // path: 'animations/animation-skills.json'
         // path: 'https://assets1.lottiefiles.com/packages/lf20_jaejabqz.json'
         // path: 'https://assets10.lottiefiles.com/packages/lf20_lln7m43m.json'
         // path: 'https://assets10.lottiefiles.com/packages/lf20_xsnsvpbs.json'
@@ -23,6 +22,6 @@ LottieInteractivity.create({
     actions: [{
         visibility: [0, 1],
         type: 'seek',
-        frames: [60, number_of_frames],
+        frames: [40, frames_to_stop],
     }, ],
 });
