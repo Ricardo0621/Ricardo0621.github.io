@@ -10,6 +10,7 @@
     --previewBackground: #fbf9f3cc;
     --buttonColor: #000000;
     --menuBackgroundColor: #ebebebe6;
+    --aTagColor: #0c5460;
 }
 
 
@@ -58,7 +59,7 @@ h4 {
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h6 {
@@ -171,7 +172,7 @@ textarea {
 
 a {
     text-decoration: none;
-    color: #17a2b8;
+    color: var(--aTagColor);
 }
 
 ul {
@@ -488,6 +489,10 @@ ul {
 .project-links {
     display: flex;
     justify-content: space-evenly;
+}
+
+.project-links a {
+    color: #000000;
 }
 
 
