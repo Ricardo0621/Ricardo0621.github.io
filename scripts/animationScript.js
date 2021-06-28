@@ -8,7 +8,8 @@ var animation = bodymovin.loadAnimation({
     rendererSettings: {
         progressiveLoad: true,
     },
-    path: 'animations/animation-skills2.json' //Dude typing
+    path: 'https://assets5.lottiefiles.com/packages/lf20_qtjr5u1m.json'
+    // path: 'animations/animation-skills2.json' //Dude typing
         // path: 'https://assets2.lottiefiles.com/packages/lf20_i9mxcD.json'
         // path: 'https://assets.codepen.io/4358584/01.json',
         // path: 'https://assets10.lottiefiles.com/packages/lf20_44gjzh9a.json' //Typing in floor broken background
