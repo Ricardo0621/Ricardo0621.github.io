@@ -559,8 +559,8 @@ ul {
 }
 
 footer {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
