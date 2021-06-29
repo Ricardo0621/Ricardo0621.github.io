@@ -7,7 +7,7 @@ var lottie_animation = bodymovin.loadAnimation({
     autoplay: false,
     rendererSettings: {
         progressiveLoad: true,
-        preserveAspectRatio: 'xMidYMid meet'
+        // preserveAspectRatio: 'xMidYMid meet'
     },
     path: 'https://assets8.lottiefiles.com/packages/lf20_hmgrv1ix.json'
         // path: 'animations/animation.json',

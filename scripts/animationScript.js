@@ -7,7 +7,7 @@ var animation = bodymovin.loadAnimation({
     autoplay: false,
     rendererSettings: {
         progressiveLoad: true,
-        preserveAspectRatio: 'xMidYMid meet'
+        // preserveAspectRatio: 'xMinYMin slice',
     },
     path: 'https://assets4.lottiefiles.com/packages/lf20_doafgsap.json'
 
